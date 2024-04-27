@@ -1,0 +1,10 @@
+.content {
+    position: fixed;
+    top: 2%; /* 距离顶部的距离 */
+    left: 20%; /* 距离右侧的距离 */
+    width: 79%; /* 窗口宽度 */
+    height: 96%; /* 窗口高度 */
+    background-color: rgba(135, 206, 235,0.6); /* 背景色 */
+    border-radius: 20px; /* 圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+}

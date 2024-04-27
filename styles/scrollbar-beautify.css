@@ -1,0 +1,20 @@
+/* 隐藏默认滚动条 */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* 定制滚动条的轨道 */
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* 定制滚动条的滑块 */
+body::-webkit-scrollbar-thumb {
+    background: rgba(183, 0, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* 鼠标悬停时滑块的颜色 */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(185, 5, 255, 0.7);
+}

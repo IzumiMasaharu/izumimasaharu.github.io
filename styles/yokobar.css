@@ -1,0 +1,35 @@
+.yokobar {
+    height: 7vw;
+    width: 100%; /* 调整导航栏的宽度 */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.0); /* 导航栏背景颜色 */
+    padding-top: 0px;
+    text-align:center; /* 居中导航栏内容 */
+    font-family: "微软雅黑"; /* 导航栏字体 */
+    overflow: hidden;
+}
+
+.yokobar .button {
+    background-color: rgba(37, 172, 250, 0.5); /* Green */
+    border: none;
+    color: white;
+    height: 100%;
+    width: 33.333%;
+    padding: height width;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 2.5vw;
+    transition-duration: 0.4s;
+    border: 2px solid rgba(119, 119, 170, 0.8);
+    cursor: pointer;
+    float:inline-start;
+}
+
+.yokobar .button:hover {
+  background-color: rgba(141, 71, 255, 0.7);
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

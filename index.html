@@ -1,0 +1,88 @@
+</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="IzumiMasaharu" content="width=device-width, initial-scale=1.0">
+        <title>Profile-of-Izumi</title>
+
+        <link rel="icon" href="./src/ico/favicon.ico">
+
+        <link rel="stylesheet" href="./styles/loader.css">
+        <link rel="stylesheet" href="./styles/sidebar.css">
+        <link rel="stylesheet" href="./styles/content.css">
+
+        <style>
+            body {
+                background-image: url("./src/Images/background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+            }
+
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2); /* 添加半透明的黑色遮罩层 */
+            }
+        </style>
+
+        <script src="./js/loading.js"></script>
+        <script src="./js/changePage.js"></script>
+        <script src="./js/toggleMute.js"></script>
+
+    </head>
+
+    <body>
+        <div id="loadingContainer">
+            <div class="loader"></div>
+            <div class="text">
+                <strong>迷子でもいい、迷子でも進め。</strong>
+            </div>
+        </div>
+
+        <header>
+            <div class="sidebar">
+                <img id="musicIcon" src="./src/images/volume_on.jpg" alt="musicIcon" onclick="toggleMute()">
+                <img id="pausedIcon" src="./src/images/mute.png" alt="pausedIcon" hidden>
+
+                <div class="avatar">
+                    <br><br>
+                    <img src="./src/images/rikki.jpg" alt="Avatar">
+                </div>
+
+                <h2 style="color: #4400ff; font-size: 2.3vw;">和泉 正治</h2>
+                <h3 style="color: #4400ff; font-size: 1.8vw;"><em>Izumi Masaharu</em></h3>
+
+                <strong>
+                <hr> <a href="#" onclick="changePage('content/home/home.html')">Home</a>
+                <hr> <a href="#">About</a>
+                <hr> <a href="#">Services</a>
+                <hr> <a href="#" onclick="changePage('content/contact/contact.html')">Contact</a>
+                <hr>
+                </strong>
+
+                <p style="text-align: center; color: #1a1a1a; line-height: 70%; font-size: 1vw;">&copy; 2021 Izumi Masaharu. 
+                <p style="text-align: center; color: #1a1a1a; line-height: 70%; font-size: 1vw;">All Rights Reserved.</p>   
+            </div>
+        </header>
+
+        <main>
+            <div class="content">
+                <div>
+                    <iframe id="myFrame" src="content/home/home.html" style="width:100%; height:100%; border:none;border-radius: 20px;"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <audio id="bgm" controls="controls" loop hidden>
+            <source src="./src/music/bgm.mp3" type="audio/mpeg" />
+            <source src="./src/music/bgm.oog" type="audio/oog" />
+        </source>
+    </body>
+</html>
