@@ -22,7 +22,7 @@
 
 .sidebar a {
     padding: 5%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-decoration:dashed;
     display: block;
     color: rgb(255, 255, 255); /* 导航栏链接颜色 */
